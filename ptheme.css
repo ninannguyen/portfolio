@@ -1,0 +1,39 @@
+.container > div {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h h"
+    "p p p p p p . i i i i i i"
+    "p p p p p p . o o o o o o"
+    "p p p p p p . . . . . . ."
+    "t t t t . . . r r . . . ."
+    "c c c c c c c w w w w w w"
+    "c c c c c c c w w w w w w"
+    "f f f f f f f f f f f f f"
+    ;
+}
+.header{
+    grid-area: h;
+    background-color:rgb(39, 79, 102);
+}
+.header a{
+    color: aliceblue;
+    padding: 15px;
+}
+.gd{
+    grid-area: g;
+}
+.fig{
+    grid-area: f;
+}
+.photo{
+    display: grid;
+    grid-area: p;
+    width: 50%;
+    padding: 10px;
+}

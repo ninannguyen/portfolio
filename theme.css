@@ -1,0 +1,57 @@
+.container > div {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "h h h h h h h h h h h h h"
+        "p p p p p p . i i i i i i"
+        "p p p p p p . o o o o o o"
+        "p p p p p p . . . . . . ."
+        "t t t t . . . r r . . . ."
+        "c c c c c c c w w w w w w"
+        "c c c c c c c w w w w w w"
+        "f f f f f f f f f f f f f"
+        ;
+}
+.header{
+    grid-area: h;
+    background-color:rgb(39, 79, 102);
+}
+.header a{
+    color: aliceblue;
+    padding: 15px;
+}
+p, li{
+    width: 40%;
+    height: 100%;
+    font-size: 16px;
+    color: rgb(41, 136, 219);
+    /* grid-area: c; */
+}
+img{
+    grid-area: p;
+}
+.intro{
+    grid-area: i;
+}
+.obj{
+    grid-area: o;
+    align-content: center;
+}
+.content{
+    grid-area: c;
+}
+.work{
+    grid-area: w;
+}
+.contact{
+    grid-area: f;
+    align-content: center;
+}
+.two{
+    grid-area:r;
+}
