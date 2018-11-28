@@ -20,10 +20,15 @@
 .header{
     grid-area: h;
     background-color:rgb(39, 79, 102);
+    width: 99%;
+    overflow: hidden;
+    position: fixed;
+
 }
 .header a{
     color: aliceblue;
     padding: 15px;
+    
 }
 p, li{
     width: 40%;
@@ -34,6 +39,10 @@ p, li{
 }
 img{
     grid-area: p;
+    width: 80%;
+}
+h3, a{
+    font-family: 'Manuale', serif;
 }
 .intro{
     grid-area: i;
@@ -45,13 +54,9 @@ img{
 .content{
     grid-area: c;
 }
-.work{
+#work{
     grid-area: w;
 }
-.contact{
-    grid-area: f;
-    align-content: center;
-}
-.two{
+.#ref{
     grid-area:r;
 }

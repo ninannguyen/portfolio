@@ -6,34 +6,52 @@
 .container {
     display: grid;
     grid-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px auto auto auto auto;
     grid-template-areas: 
-    "h h h h h h h h h h h h h"
-    "p p p p p p . i i i i i i"
-    "p p p p p p . o o o o o o"
-    "p p p p p p . . . . . . ."
-    "t t t t . . . r r . . . ."
-    "c c c c c c c w w w w w w"
-    "c c c c c c c w w w w w w"
-    "f f f f f f f f f f f f f"
-    ;
+    "h h h h h h h h h h h h"
+    "p p p p p p p p p p p p"
+    "p p p p p p p p p p p p"
+    "c c c c c c c c c c c c"
+    "c c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+    height: 100%;
+}
+/* .photo  {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 100px;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: auto;
+    /* padding-top: 50px; */
+    /* width: 48%; */
+    /* height:100%; */
+} */
+/* .pic{
+    grid-area: c; */
+    
 }
 .header{
     grid-area: h;
     background-color:rgb(39, 79, 102);
+    position: fixed;
+    width: 99%;
 }
 .header a{
     color: aliceblue;
     padding: 15px;
 }
-.gd{
-    grid-area: g;
-}
-.fig{
-    grid-area: f;
+/* img{
+    display: grid; */
+    /* grid-area: p;
+    width: 100%;
+    padding-left: 10px; */
 }
 .photo{
-    display: grid;
     grid-area: p;
-    width: 50%;
-    padding: 10px;
 }
+/*
+.photo2{
+    grid-area: g;
+} */

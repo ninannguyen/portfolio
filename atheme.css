@@ -1,0 +1,77 @@
+.container > div {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px auto auto auto auto;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "p p p p p p . o o o o ."
+        "p p p p p p . . . . . ."
+        "p p p p p p . . . . . ."
+        ". c d . . . . . . r r ."
+        /* "c c c c c c c w w w w w w" */
+        /* "f f f f f f f f f f f f f" */
+        ;
+        height: 100%;
+}
+.header{
+    /* width: 100%; */
+    grid-area: h;
+    background-color:rgb(39, 79, 102);
+    width: 100%;
+    /* overflow:hidden; */
+    position: fixed;
+
+}
+.header a{
+    color: aliceblue;
+    padding: 15px;
+}
+p{
+    width: 100%;
+    /* height: 100%; */
+    font-size: 20px;
+    color: rgb(41, 136, 219);
+}
+img{
+    grid-area: p;
+    width: 100%;
+    position: sticky;
+    margin: 15px;
+    align-content: center;
+    justify-content: center;
+    /* GOOGLE CLIPPING MASK SVG/JPG */
+}
+@media(max-width:100px) {
+    .header {width:100%;}
+}
+    /* ADJUSTING TO RESIZING OF WINDOW*/
+
+button{
+    color: aliceblue;
+    background-color: rgb(39, 79, 102);
+    border-color:rgb(39, 79, 102);
+    width: 60px;
+    height: 50px;
+}
+#hi{
+    grid-area: c;
+}
+#bye{
+    grid-area: d;
+}
+.text{
+    grid-area: o;
+    padding: 10px;
+}
+.contact{
+    grid-area: r;
+    color: rgb(41, 136, 219);
+    justify-content: flex-end;
+}
+/* simplify grid if its getting too complicated, add more to XD wireframes */
