@@ -6,29 +6,33 @@
 .container {
     display: grid;
     grid-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px auto auto auto auto;
     grid-template-areas: 
-        "h h h h h h h h h h h h h"
-        "p p p p p p . i i i i i i"
-        "p p p p p p . o o o o o o"
-        "p p p p p p . . . . . . ."
-        "t t t t . . . r r . . . ."
-        "c c c c c c c w w w w w w"
-        "c c c c c c c w w w w w w"
-        "f f f f f f f f f f f f f"
+        "h h h h h h h h h h h h"
+        "p p p p p p . i i i i i"
+        "p p p p p p . o o o o o"
+        "p p p p p p . . . . . ."
+        "t t t t . . . r r . . ."
+        "c c c c c c c w w w w w"
+        "c c c c c c c w w w w w"
+        "f f f f f f f f f f f f"
         ;
 }
 .header{
     grid-area: h;
     background-color:rgb(39, 79, 102);
-    width: 99%;
-    overflow: hidden;
     position: fixed;
-
+    width: 99%;
 }
 .header a{
     color: aliceblue;
+    font-family: 'Raleway', sans-serif;
     padding: 15px;
-    
+    text-decoration: none;
+}
+.header a:hover{
+    color: rgb(95, 143, 170);
 }
 p, li{
     width: 40%;
@@ -42,7 +46,7 @@ img{
     width: 80%;
 }
 h3, a{
-    font-family: 'Manuale', serif;
+    /* font-family: 'Manuale', serif; */
 }
 .intro{
     grid-area: i;

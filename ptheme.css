@@ -9,28 +9,22 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 60px auto auto auto auto;
     grid-template-areas: 
-    "h h h h h h h h h h h h"
-    "p p p p p p p p p p p p"
-    "p p p p p p p p p p p p"
-    "c c c c c c c c c c c c"
-    "c c c c c c c c c c c c"
-    "f f f f f f f f f f f f";
-    height: 100%;
+        "h h h h h h h h h h h h"
+        "p p p p p p p p p p p p"
+        "p p p p p p p p p p p p"
+        "p p p p p p p p p p p p"
+        "p p p p p p p p p p p p"
+        "p p p p p p p p p p p p"
+        "p p p p p p p p p p p p"
 }
-/* .photo  {
+.photo {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 50px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: 100px;
     grid-auto-columns: 1fr;
     grid-auto-flow: auto;
-    /* padding-top: 50px; */
-    /* width: 48%; */
-    /* height:100%; */
-} */
-/* .pic{
-    grid-area: c; */
-    
+    /* padding-top: 10px; */
 }
 .header{
     grid-area: h;
@@ -40,18 +34,23 @@
 }
 .header a{
     color: aliceblue;
+    font-family: 'Raleway', sans-serif;
     padding: 15px;
+    text-decoration: none;
 }
-/* img{
-    display: grid; */
-    /* grid-area: p;
+.header a:hover{
+    color: rgb(95, 143, 170);
+}
+img{
+    display: grid;
     width: 100%;
-    padding-left: 10px; */
+    /* padding: 50px; */
+    padding: auto;
 }
-.photo{
-    grid-area: p;
+.circle{
+    border-radius: 50%;
 }
-/*
-.photo2{
-    grid-area: g;
-} */
+@media(max-width:550px) {
+    .photo {width:40%;}
+    {margin: 10px;}
+}
