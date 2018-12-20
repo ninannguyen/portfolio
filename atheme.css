@@ -10,33 +10,40 @@
     grid-template-rows: 60px auto auto auto auto;
     grid-template-areas: 
         "h h h h h h h h h h h h"
+        "p p p p p p . . . . . ."
         "p p p p p p . o o o o ."
         "p p p p p p . . . . . ."
-        "p p p p p p . . . . . ."
-        ". c d . . . . . . r r ."
-        /* "c c c c c c c w w w w w w" */
-        /* "f f f f f f f f f f f f f" */
+        "p p p p p p r r r r . ."
+        ". c d . . . . . . . . ."
         ;
-        height: 100%;
+}
+body{
+    background-color: aliceblue;
 }
 .header{
-    /* width: 100%; */
     grid-area: h;
-    background-color:rgb(39, 79, 102);
-    width: 100%;
-    /* overflow:hidden; */
+    background-color:rgba(210, 234, 255, 0.596);
     position: fixed;
-
+    width: 99%;
+    z-index: 9;
 }
 .header a{
-    color: aliceblue;
+    color: rgb(39, 79, 102);
+    font-family: 'Raleway', sans-serif;
     padding: 15px;
+    text-decoration: none;
+}
+.header a:hover{
+    color: rgb(95, 143, 170);
 }
 p{
     width: 100%;
-    /* height: 100%; */
-    font-size: 20px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
     color: rgb(41, 136, 219);
+}
+h4{
+    align-content: center;
 }
 img{
     grid-area: p;
@@ -59,6 +66,9 @@ button{
     width: 60px;
     height: 50px;
 }
+.circle{
+    border-radius: 50%;
+}
 #hi{
     grid-area: c;
 }
@@ -74,4 +84,3 @@ button{
     color: rgb(41, 136, 219);
     justify-content: flex-end;
 }
-/* simplify grid if its getting too complicated, add more to XD wireframes */
